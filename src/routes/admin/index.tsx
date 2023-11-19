@@ -7,10 +7,12 @@ export default component$(() => {
     const options: string[] = ['Users', 'Pages', 'Design', 'Marketing', 'Security', 'Data', 'Settings']
     return (
         <div>
-            <h1> Welcome to the admin portal </h1>
-            {
-                options.map(item => <PortalCard option={item} key={item}/>)
-            }
+            <div>
+                {options.map(item => <PortalCard option={item} key={item}/>)}
+            </div>
+            <div>
+                <h1> Welcome to the admin portal </h1>
+            </div>
         </div>
     )
 });
@@ -22,9 +24,8 @@ export const PortalCard = component$(
     const handleClick = $(() => nav(optionRoute))
 
     return (
-        <div>
+        <div onClick$={handleClick}>
             <h3> {option} Portal </h3>
-            <button onClick$={handleClick}> Enter </button>
         </div>
     )
 })
