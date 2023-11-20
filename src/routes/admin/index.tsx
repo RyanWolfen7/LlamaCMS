@@ -1,6 +1,7 @@
 import { component$, $ } from '@builder.io/qwik';
 import { useNavigate } from '@builder.io/qwik-city';
-import { SideNav } from '../../components/navigation/SideNav/SideNav'
+import { SideNav } from '~/components/navigation/SideNav/SideNav'
+import { DefaultButton } from '~/components/buttons/DefaultButton';
 
 type PostalCardProps = { option: string }
 
@@ -10,6 +11,7 @@ export default component$(() => {
     return (
         <div class="grid grid-cols-6">
             <SideNav> 
+                {isAdmin && <DefaultButton classOveride="place-self-end" label="edit"/>}
                 {options.map(item => <PortalCard option={item} key={item}/>)} 
             </SideNav>
             <div>
@@ -26,8 +28,8 @@ export const PortalCard = component$(
     const handleClick = $(() => nav(optionRoute))
 
     return (
-        <div onClick$={handleClick} class="text-center hover:bg-white hover:text-black cursor-pointer">
+        <button onClick$={handleClick} class="text-center hover:bg-white hover:text-black cursor-pointer">
             <h3> {option} Portal </h3>
-        </div>
+        </button>
     )
 })
