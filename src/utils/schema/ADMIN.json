@@ -1,0 +1,82 @@
+{
+    "portals": [
+        {
+            "title": "Users",
+            "slug": "users",
+            "icon": "",
+            "permissions": {
+                "editable": true,
+                "deletable": true,
+                "arrangable": true,
+                "hidden": []
+            }
+        }, 
+        {
+            "title": "Pages",
+            "slug": "pages",
+            "icon": "",
+            "permissions": {
+                "editable": true,
+                "deletable": true,
+                "arrangable": true,
+                "hidden": []
+            }
+        },
+        {
+            "title": "Design",
+            "slug": "design",
+            "icon": "",
+            "permissions": {
+                "editable": true,
+                "deletable": true,
+                "arrangable": true,
+                "hidden": []
+            }
+        },
+        {
+            "title": "Marketing",
+            "slug": "marketing",
+            "icon": "",
+            "permissions": {
+                "editable": true,
+                "deletable": true,
+                "arrangable": true,
+                "hidden": []
+            }
+        },
+        {
+            "title": "Security",
+            "slug": "security",
+            "icon": "",
+            "permissions": {
+                "editable": true,
+                "deletable": true,
+                "arrangable": true,
+                "hidden": []
+            }
+        },
+        {
+            "title": "Data",
+            "slug": "data",
+            "icon": "",
+            "permissions": {
+                "editable": true,
+                "deletable": true,
+                "arrangable": true,
+                "hidden": []
+            }
+        },
+        {
+            "title": "Settings",
+            "slug": "settings",
+            "icon": "",
+            "core": true,
+            "permissions": {
+                "editable": false,
+                "deletable": false,
+                "arrangable": false,
+                "hidden": []
+            }
+        }
+    ]
+}
